@@ -1,0 +1,15 @@
+\begin{table}[h]
+    \centering
+    \caption{サンプルデータテーブル}
+    \label{tab:sample_data}
+    \begin{tabular}{|c|r|r|}
+        \hline
+        カテゴリ & 値1 & 値2 \\ \hline
+        三 & 0 & 8145 \\
+        四 & 50 & 9185 \\
+        五 & 100 & 9425 \\
+        六 & 150 & 9545 \\
+        星 & 200 & 9265 \\
+        円 & 250 & 9841 \\ \hline
+    \end{tabular}
+\end{table}

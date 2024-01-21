@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\title{サンプルドキュメント}
+\author{著者名}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+% ここに文書の本文を書き始めます。
+\section{はじめに}
+ここにセクションの内容を記述します。
+
+\section{背景}
+このセクションでは、背景情報を提供します。
+
+% その他のセクションや内容
+
+\end{document}

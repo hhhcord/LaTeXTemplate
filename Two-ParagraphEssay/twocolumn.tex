@@ -1,0 +1,106 @@
+\documentclass[a4j,10pt, twocolumn]{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{slashbox}
+%---------------------------------------------------
+% ページの設定
+%---------------------------------------------------
+\setlength{\textwidth}{170truemm}
+\setlength{\textheight}{250truemm}
+\setlength{\topmargin}{-14.5truemm}
+\setlength{\oddsidemargin}{-5.5truemm}
+\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\parindent}{1zw}
+
+\begin{document}
+\twocolumn
+[
+\begin{center}
+{\huge 研究タイトル}
+\end{center}
+\begin{flushright}
+\begin{tabular}{rr}
+{\Large \ } &\ \\
+　　　　　&○○研究室\\
+学籍番号&おなまえ\\
+{\Large \ } &\ \\
+\end{tabular}
+\end{flushright}
+\vspace{2truemm}
+]
+\section{研究目的}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{解析手法}
+\subsection{サブセクション}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{eqnarray*}
+f(x)&=&\frac{1}{\sqrt{2\pi\sigma^{2}}} \exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2} \right) \\
+F(x)&=&\frac12 \left(1 + \mathrm{erf}\,\frac{x-\mu}{\sqrt{2\sigma^{2} } }\right) \\
+f(x; \lambda) &=& \left\{ \begin{array}{ll} \lambda e^{-\lambda x} & (x \geq 0) \\ 0 & (x < 0)\end{array}\right.  \\
+F(x; \lambda) &=& \left\{ \begin{array}{ll} 1 - e^{-\lambda x} & (x \geq 0) \\ 0 & (x < 0)\end{array}\right.
+\end{eqnarray*}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{サブセクション}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{itemize}
+\item Lorem
+\item ipsum
+\item dolor
+\item sit
+\item amet
+\item consectetur
+\end{itemize}
+\section{実験方法}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{結果}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\vspace{-1em}
+\begin{table}[H]
+\begin{center}
+\caption{表題}
+\vspace{-0.5em}
+無理やりだがここにも書ける
+\label{all0}
+\begin{tabular}{|r|c|c|c|c|}
+\hline
+\backslashbox{{\scriptsize 行}}{{\scriptsize 列}}&A&B&C&D \\ \hline
+1&1A&1B&1C&1D \\ \hline
+2&2A&2B&2C&2D \\ \hline
+3&3C&3B&3C&3D \\ \hline
+4&4C&4B&4C&4D \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\caption{西暦と和暦の対応表}
+\vspace{1zw}
+\label{03AB-A2}
+\begin{tabular}{cc}
+\noalign{\hrule height 1pt}
+西暦&和暦\\ \hline
+1989年&平成元年\\
+1990年&平成2年\\
+1991年&平成3年\\
+\noalign{\hrule height 1pt}
+\end{tabular}
+\end{center}
+\end{table}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{考察と今後の課題}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\bibliographystyle{jplain}
+\begin{thebibliography}{3}
+\bibitem{3} \label{takada}
+著者名(年),``論文タイトル", なんの学会誌200X,(SMB YYYY).
+\end{thebibliography}
+\end{document}

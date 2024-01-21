@@ -1,0 +1,17 @@
+%algorithm
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{figure}[htbp]
+  \begin{algorithm}[H]
+  \caption{}
+  \label{alg}
+  \begin{algorithmic}[1] %行番号をつけないときは[1]は不要
+  \REQUIRE 
+  \ENSURE 
+  \STATE
+  \end{algorithmic}
+  \end{algorithm}
+\end{figure}

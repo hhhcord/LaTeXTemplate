@@ -1,0 +1,6 @@
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\textwidth]{picture_1.pdf}
+		\caption{組織観察\_結果\_1}
+	\end{center}
+\end{figure}

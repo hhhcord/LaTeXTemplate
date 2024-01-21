@@ -1,0 +1,10 @@
+\begin{thebibliography}{9}
+    \bibitem{nakamura2010}
+    中村太郎. \textit{日本の科学技術}, 東京大学出版, 東京, 2010.
+
+    \bibitem{smith2020}
+    Smith, J. \textit{Modern Physics}, Cambridge University Press, Cambridge, 2020.
+
+    \bibitem{lopez2015}
+    Lopez, M. \textit{データサイエンス入門}, Springer, ベルリン, 2015.
+\end{thebibliography}

@@ -1,0 +1,98 @@
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=1.0\columnwidth, clip]{.eps}
+    \caption{}
+  \end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_composite.jpg}
+    \caption{Composite}
+  \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_gradation.jpg}
+    \caption{Gradation}
+  \end{minipage}
+\end{figure}
+
+\usepackage[hang,small,bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
+
+\begin{figure}[htbp]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_composite.jpg}
+    \subcaption{Composite}
+  \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_gradation.jpg}
+    \subcaption{Gradation}
+  \end{minipage}
+  \caption{subcaptionを用いて図を並べる}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{tabular}{cc}
+    \begin{minipage}[t]{0.45\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_composite.jpg}
+      \caption{Composite}
+      \label{composite}
+    \end{minipage} &
+    \begin{minipage}[t]{0.45\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_gradation.jpg}
+      \caption{Gradation}
+      \label{Gradation}
+    \end{minipage} \\
+  
+    \begin{minipage}[t]{0.45\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_fill.jpg}
+      \caption{Fill}
+      \label{fill}
+    \end{minipage} &
+    \begin{minipage}[t]{0.45\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_transform.jpg}
+      \caption{Transform}
+      \label{transform}
+    \end{minipage} 
+  \end{tabular}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{tabular}{cc}
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_composite.jpg}
+      \subcaption{Composite}
+      \label{composite}
+    \end{minipage} &
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_gradation.jpg}
+      \subcaption{Gradation}
+      \label{Gradation}
+    \end{minipage} \\
+  
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_fill.jpg}
+      \subcaption{Fill}
+      \label{fill}
+    \end{minipage} &
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, scale=0.8]{figures/canvas_transform.jpg}
+      \subcaption{Transform}
+      \label{transform}
+    \end{minipage} 
+  \end{tabular}
+  \caption{subcaptionを用いた複数図}
+\end{figure}

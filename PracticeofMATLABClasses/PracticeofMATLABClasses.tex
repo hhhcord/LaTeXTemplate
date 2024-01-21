@@ -1,0 +1,94 @@
+\documentclass[a4]{jarticle}  %文字サイズ・用紙サイズ・段組設定
+\usepackage[top=20truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}    %余白設定
+%-----挿入設定-----%
+\usepackage[dvipdfmx]{graphicx}     %図を用いる
+%\usepackage[dvipdfmx]{hyperref}     %ハイパーリンクをつける
+\usepackage[dvipdfmx]{color}        %色をつける
+\usepackage{here}                   %場所強制コマンド[H]を使う
+%-----数式設定-----%
+\usepackage{amsmath,amssymb,amsthm} %数式の文字
+\usepackage{amsfonts,times}         %数式のフォント
+\usepackage{mathrsfs}               %花文字を使う
+\usepackage{bm}                     %太字(ベクトル)を使う
+\usepackage{cases}                  %場合分けを使う
+\usepackage{url}                    %URLを入力する
+\usepackage{float}                  %図を用いる
+\usepackage{subcaption}             %サブキャプションを使う
+\usepackage{mathtools}
+%-----行間設定-----%
+\usepackage{setspace}               %行間設定
+\setstretch{0.8}
+\usepackage{fancyhdr}               %-数式前後の行間設定
+\setlength{\columnseprule}{0pt}
+%-----題名設定-----%
+\theoremstyle{definition}
+\newtheorem{definition}{定義}
+\newtheorem{theorem}{定理}
+\renewcommand{\figurename}{Fig. }
+\renewcommand{\tablename}{TABLE}
+%sectionのサイズ
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\newcommand{\beforesection}[1]{\vspace{-#1mm}}
+%表のサイズ
+\usepackage{scalefnt}
+%algorithm
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+%------------------------------%
+\begin{document}
+
+\begin{center}
+{\Large Practice of MATLAB Classes}\\
+\end{center}
+\begin{flushright}
+\begin{tabular}{rr}
+{\tiny \ } &\ \\
+作成日&\today\\
+{\tiny \ } &\ \\
+\end{tabular}
+\end{flushright}
+
+\begin{figure}[htbp]
+  \begin{algorithm}[H]
+  \caption{MATLABにおけるオブジェクト指向プログラミングの手順}
+  \begin{algorithmic}[1] 
+  \REQUIRE MATLAB環境
+  \ENSURE オブジェクト指向プログラミングの理解
+  \STATE クラスの概念を理解する
+  \STATE 関連する属性とメソッドを持つクラスを定義する
+  \STATE 属性には位置やサイズなどの特性を設定する
+  \STATE メソッドにはオブジェクトの動作を記述する
+  \STATE インスタンス（クラスの具体的な例）を作成する
+  \STATE インスタンスを用いてメソッドを呼び出し、オブジェクトを操作する
+  \STATE 必要に応じてプライベートプロパティを用いて属性を保護する
+  \STATE オブジェクトの振る舞いをテストし、正しく機能することを確認する
+  \end{algorithmic}
+  \end{algorithm}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{algorithm}[H]
+  \caption{MATLABにおけるオブジェクト指向設計の学習プロセス}
+  \begin{algorithmic}[1] % 行番号をつけるために[1]を使用
+  \REQUIRE MATLABユーザーがオブジェクト指向の基本的なイメージを持っていること
+  \ENSURE オブジェクト指向設計の理解とMATLABでの実装能力
+  \STATE オブジェクト指向の基本的なイメージを理解する
+  \STATE 継承の概念を学ぶ
+  \STATE クラス設計の基本思想について学ぶ
+  \STATE MATLABで継承クラス設計を理解する
+  \STATE クラスのアクセス権について学ぶ（private, protected, public）
+  \STATE 実際のMATLABコード例を試す（例：自由落下運動のシミュレーション）
+  \STATE オブジェクト指向設計の利点を理解する
+  \STATE 継承の必要性について考え、適切な場面での使用を決定する
+  \STATE MATLABのクラス機能についてさらに学ぶ（必要に応じて）
+  \end{algorithmic}
+  \end{algorithm}
+\end{figure}
+
+
+\end{document}

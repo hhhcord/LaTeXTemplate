@@ -1,0 +1,61 @@
+\documentclass[10pt,a4paper]{jarticle}  %文字サイズ・用紙サイズ・段組設定
+\usepackage[top=20truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}    %余白設定
+%-----挿入設定-----%
+\usepackage[dvipdfmx]{graphicx}     %図を用いる
+\usepackage[dvipdfmx]{hyperref}     %ハイパーリンクをつける
+\usepackage[dvipdfmx]{color}        %色をつける
+\usepackage{here}                   %場所強制コマンド[H]を使う
+%-----数式設定-----%
+\usepackage{amsmath,amssymb,amsthm} %数式の文字
+\usepackage{amsfonts,times}         %数式のフォント
+\usepackage{mathrsfs}               %花文字を使う
+\usepackage{bm}                     %太字(ベクトル)を使う
+\usepackage{cases}                  %場合分けを使う
+\usepackage{url}                    %URLを入力する
+\usepackage{float}                  %図を用いる
+\usepackage{subcaption}             %サブキャプションを使う
+%-----行間設定-----%
+\usepackage{setspace}               %行間設定
+\setstretch{0.8}
+\usepackage{fancyhdr}               %-数式前後の行間設定
+\setlength{\columnseprule}{0pt}
+%-----題名設定-----%
+\theoremstyle{definition}
+\newtheorem{definition}{定義}
+\newtheorem{theorem}{定理}
+\renewcommand{\figurename}{Fig. }
+\renewcommand{\tablename}{TABLE}
+
+%------------------------------%
+\begin{document}
+\title{第n回 進捗報告書}
+\author{星野 晴紀}
+\date{\today}
+\maketitle
+
+\section{前回の課題}
+\begin{itemize}
+    \item 論文\cite{guo2022pid}の読解を試みる.
+\end{itemize}
+
+\section{進捗状況}
+\subsection{やったこと1}
+\begin{definition}
+    定義を書く．
+\end{definition}
+
+
+\subsection{やったこと2}
+\begin{theorem}
+    定理を書く．
+\end{theorem}
+
+\section{次回までの課題}
+\begin{itemize}
+    \item 論文\cite{guo2022pid}の読解を試みる.
+\end{itemize}
+
+\bibliography{reference}           %bibtexで参考文献を入れる場合使用
+\bibliographystyle{IEEEtran}   %参考文献のスタイル指定
+
+\end{document}

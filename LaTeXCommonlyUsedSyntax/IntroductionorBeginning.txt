@@ -1,0 +1,40 @@
+\documentclass[a4]{jarticle}  %文字サイズ・用紙サイズ・段組設定
+\usepackage[top=20truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}    %余白設定
+%-----挿入設定-----%
+\usepackage[dvipdfmx]{graphicx}     %図を用いる
+%\usepackage[dvipdfmx]{hyperref}     %ハイパーリンクをつける
+\usepackage[dvipdfmx]{color}        %色をつける
+\usepackage{here}                   %場所強制コマンド[H]を使う
+%-----数式設定-----%
+\usepackage{amsmath,amssymb,amsthm} %数式の文字
+\usepackage{amsfonts,times}         %数式のフォント
+\usepackage{mathrsfs}               %花文字を使う
+\usepackage{bm}                     %太字(ベクトル)を使う
+\usepackage{cases}                  %場合分けを使う
+\usepackage{url}                    %URLを入力する
+\usepackage{float}                  %図を用いる
+\usepackage{subcaption}             %サブキャプションを使う
+\usepackage{mathtools}
+%-----行間設定-----%
+\usepackage{setspace}               %行間設定
+\setstretch{0.8}
+\usepackage{fancyhdr}               %-数式前後の行間設定
+\setlength{\columnseprule}{0pt}
+%-----題名設定-----%
+\theoremstyle{definition}
+\newtheorem{definition}{定義}
+\newtheorem{theorem}{定理}
+\renewcommand{\figurename}{Fig. }
+\renewcommand{\tablename}{TABLE}
+%sectionのサイズ
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\newcommand{\beforesection}[1]{\vspace{-#1mm}}
+%表のサイズ
+\usepackage{scalefnt}
+%algorithm
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
